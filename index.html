@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="box-header" onclick="toggleBox('box1')"> 
+                <input type="radio" name="boxSelection" id="radioBox1" onclick="focusBox('box1')">
+                1 Unit</div>
+            <span>10% Off</span>
+            <span>Standard Price $10.00 USD</span>
+            <div class="box-content">
+                <p>Select Color :</p>
+                <select class="select" id="colorBox1" onchange="changeColor('box1', this.value)">
+                    <option value="white">White</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="lightcoral">Light Coral</option>
+                </select>
+                <p>Select Size :</p>
+                <select class="select" id="sizeBox1" onchange="changeSize('box1', this.value)">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="box" id="box2">
+            <div class="box-header" onclick="toggleBox('box2')">
+                <input type="radio" name="boxSelection" id="radioBox1" onclick="focusBox('box1')">
+                2 Unit</div>
+            <span>20% Off</span>
+            <span>Most Popular $18.00 USD </span>
+            <div class="box-content">
+                <p>Select Color :</p>
+                <select class="select" id="colorBox2" onchange="changeColor('box2', this.value)">
+                    <option value="white">White</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="lightcoral">Light Coral</option>
+                </select>
+                <p>Select Size :</p>
+                <select class="select" id="sizeBox2" onchange="changeSize('box2', this.value)">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="box" id="box3">
+            <div class="box-header" onclick="toggleBox('box3')">
+                <input type="radio" name="boxSelection" id="radioBox1" onclick="focusBox('box1')">
+                3 Unit</div>
+            <span>30% Off</span>
+            <span>Premium Price $24.00 USD
+            </span>
+            <div class="box-content">
+                <p>Select Color :</p>
+                <select class="select" id="colorBox3" onchange="changeColor('box3', this.value)">
+                    <option value="white">White</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="lightcoral">Light Coral</option>
+                </select>
+                <p>Select Size :</p>
+                <select class="select" id="sizeBox3" onchange="changeSize('box3', this.value)">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
